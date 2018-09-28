@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        StepSensor()
+
         startButton = findViewById(R.id.startBtn)
         startButton.setOnClickListener{ view -> addBeeObject() }
         arFragment = supportFragmentManager.findFragmentById(R.id.sceneform_fragment) as ArFragment
