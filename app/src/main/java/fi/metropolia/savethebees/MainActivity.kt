@@ -14,7 +14,7 @@ import com.google.ar.sceneform.ux.TransformableNode
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var testRenderable: ModelRenderable
+    lateinit var beeRenderable: ModelRenderable
     lateinit var arFragment: ArFragment
 //    lateinit var modelUri:Uri
     lateinit var startButton: Button
@@ -24,11 +24,11 @@ class MainActivity : AppCompatActivity() {
         return android.graphics.Point(vw.width / 2, vw.height / 2)
     }
 
-    private fun  addObject(){
+    private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
         val pt = getScreenCenter()
         val hits: List<HitResult>
-        if (frame != null && testRenderable != null){
+        if (frame != null && beeRenderable != null){
             hits = frame.hitTest(pt.x.toFloat(), pt.y.toFloat())
             for (hit in hits) {
                 val trackable = hit.trackable
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                     anchorNode.setParent(arFragment.arSceneView.scene)
                     val mNode = TransformableNode(arFragment.transformationSystem)
                     mNode.setParent(anchorNode)
-                    mNode.renderable = testRenderable
+                    mNode.renderable = beeRenderable
                     mNode.select()
                     break
                 }
@@ -51,22 +51,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         startButton = findViewById(R.id.startBtn)
-        startButton.setOnClickListener{ view -> addObject() }
+        startButton.setOnClickListener{ view -> addBeeObject() }
         arFragment = supportFragmentManager.findFragmentById(R.id.sceneform_fragment) as ArFragment
 
         val bee = ModelRenderable.builder()
                 .setSource(this, Uri.parse("Mesh_Bumblebee.sfb"))
                 .build()
-        bee.thenAccept {it -> testRenderable = it}
+        bee.thenAccept {it -> beeRenderable = it}
 
 //        val spider = ModelRenderable.builder()
 //                .setSource(this, Uri.parse("Spider_01.sfb"))
 //                .build()
-//        spider.thenAccept {it -> testRenderable = it}
+//        spider.thenAccept {it -> beeRenderable = it}
 
 //        val honey = ModelRenderable.builder()
 //                .setSource(this, Uri.parse("model.sfb"))
 //                .build()
-//        honey.thenAccept {it -> testRenderable = it}
+//        honey.thenAccept {it -> beeRenderable = it}
     }
 }
