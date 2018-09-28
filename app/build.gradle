@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.google.ar.sceneform.plugin'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -20,6 +22,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -27,7 +33,25 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.4.0"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/spider/Spider_01.obj',
+        'default',
+        'sampledata/spider/Spider_01.sfa',
+        'src/main/assets/Spider_01')
+
+sceneform.asset('sampledata/bee/Mesh_Bumblebee.obj',
+        'default',
+        'sampledata/bee/Mesh_Bumblebee.sfa',
+        'src/main/assets/Mesh_Bumblebee')
+
+sceneform.asset('sampledata/honey/model.obj',
+        'default',
+        'sampledata/honey/model.sfa',
+        'src/main/assets/model')

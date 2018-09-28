@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SaveTheBees</string>
+    <string name="starGame">Star Game</string>
+
+    <string name="options">Options</string>
+    <string name="credits">Credits</string>
+    <string name="howToPlay">How To Play</string>
+    <string name="highScore">High Score</string>
 </resources>
