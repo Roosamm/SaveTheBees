@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class StepSensor : AppCompatActivity(), SensorEventListener {
 
-    private var mySensorManager: SensorManager? = null
+    private var mSensorManager: SensorManager? = null
     private var running = false
 
 
@@ -20,16 +20,16 @@ class StepSensor : AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mySensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
     }
 
     override fun onResume() {
         super.onResume()
         running = true
-        var stepSensor = mySensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+        val stepSensor = mSensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
 
         if (stepSensor != null) {
-            mySensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
+            mSensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
         } else {
             Toast.makeText(this, "Sensor not found", Toast.LENGTH_SHORT).show()
         }
@@ -38,12 +38,14 @@ class StepSensor : AppCompatActivity(), SensorEventListener {
     override fun onPause() {
         super.onPause()
         running = false
-        mySensorManager?.unregisterListener(this)
+        mSensorManager?.unregisterListener(this)
     }
 
     override fun onSensorChanged(event: SensorEvent) {
         if (running) {
-            showSteps.setText("" + event.values[0].toString())
+            var mFloat = event.values[0]
+            val mInt = mFloat.toInt()
+            showSteps.text = "" + mInt
         }
     }
 

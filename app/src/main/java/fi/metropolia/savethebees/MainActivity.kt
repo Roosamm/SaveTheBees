@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         StepSensor()
 
         startButton = findViewById(R.id.startBtn)

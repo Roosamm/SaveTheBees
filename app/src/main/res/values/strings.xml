@@ -6,4 +6,6 @@
     <string name="credits">Credits</string>
     <string name="howToPlay">How To Play</string>
     <string name="highScore">High Score</string>
+
+    <string name="showsSteps">0</string>
 </resources>
