@@ -26,7 +26,8 @@
 
         <meta-data android:name="com.google.ar.core" android:value="required"/>
 
-        <activity android:name=".ArGame"> </activity>
+        <activity android:name=".ArGame"/>
+        <activity android:name=".Credits"/>
 
     </application>
 

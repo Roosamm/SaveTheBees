@@ -48,6 +48,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        creditsBtn.setOnClickListener{
+            val intent = Intent(this, Credits::class.java)
+            startActivity(intent)
+        }
+
 
 //        StepSensor()
 //
