@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.ar_fragment.*
 
 class StepSensor : AppCompatActivity(), SensorEventListener {
 
@@ -18,7 +19,7 @@ class StepSensor : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.ar_fragment)
 
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
     }
