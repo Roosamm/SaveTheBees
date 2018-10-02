@@ -53,6 +53,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        howToBtn.setOnClickListener{
+            val intent = Intent(this, HowToPlay::class.java)
+            startActivity(intent)
+        }
+
 
 //        StepSensor()
 //

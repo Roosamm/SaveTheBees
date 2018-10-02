@@ -28,6 +28,7 @@
 
         <activity android:name=".ArGame"/>
         <activity android:name=".Credits"/>
+        <activity android:name=".HowToPlay"/>
 
     </application>
 

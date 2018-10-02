@@ -1,18 +1,24 @@
 <resources>
     <string name="app_name">SaveTheBees</string>
-    <string name="starGame">Start Game</string>
 
+    <!--Star screen-->
+    <string name="starGame">Start Game</string>
     <string name="options">Options</string>
     <string name="credits">Credits</string>
     <string name="howToPlay">How To Play</string>
     <string name="highScore">High Score</string>
 
+    <!--step sensor-->
     <string name="showsSteps">0</string>
 
+    <!--Credits-->
     <string name="developersTxt">Developers:</string>
     <string name="names">Mikko Karlsson and Roosa Mäkelä</string>
     <string name="arMmodels">3D Models:</string>
     <string name="maker">Poly by Google</string>
     <string name="maker2">Boneboys</string>
+
+    <!--How to play-->
+    <string name="howTo">GIT GUD</string>
 
 </resources>
