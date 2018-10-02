@@ -2,7 +2,7 @@
     <string name="app_name">SaveTheBees</string>
 
     <!--Star screen-->
-    <string name="starGame">Start Game</string>
+    <string name="startGame">Start Game</string>
     <string name="options">Options</string>
     <string name="credits">Credits</string>
     <string name="howToPlay">How To Play</string>
@@ -20,5 +20,11 @@
 
     <!--How to play-->
     <string name="howTo">GIT GUD</string>
+
+    <!--Options-->
+    <string name="infoTitle">Info about bees</string>
+    <string name="beeInfo">bzzzzzz</string>
+    <string name="languageTitle">Change language</string>
+    <string name="language">Finnish</string>
 
 </resources>

@@ -24,7 +24,7 @@
     android:layout_marginHorizontal="60dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/starGame" />
+    android:text="@string/startGame" />
 
     <Button
     android:id="@+id/highBtn"

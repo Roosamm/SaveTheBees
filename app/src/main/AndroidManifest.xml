@@ -3,6 +3,7 @@
     package="fi.metropolia.savethebees">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
     <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true"/>
     <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true"/>
@@ -29,6 +30,7 @@
         <activity android:name=".ArGame"/>
         <activity android:name=".Credits"/>
         <activity android:name=".HowToPlay"/>
+        <activity android:name=".Options"/>
 
     </application>
 
