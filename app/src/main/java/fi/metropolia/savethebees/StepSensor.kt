@@ -1,5 +1,5 @@
 package fi.metropolia.savethebees
-
+/*
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -8,7 +8,6 @@ import android.hardware.SensorManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ar_fragment.*
 
 class StepSensor : AppCompatActivity(), SensorEventListener {
@@ -53,4 +52,4 @@ class StepSensor : AppCompatActivity(), SensorEventListener {
     override fun onAccuracyChanged(Sensor: Sensor, accuracy: Int) {
 
     }
-}
+}*/
