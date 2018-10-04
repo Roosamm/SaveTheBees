@@ -61,7 +61,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ar_fragment)
 
-
         //Step Sensor
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
 
