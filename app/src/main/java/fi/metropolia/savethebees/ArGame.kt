@@ -35,6 +35,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         return android.graphics.Point(vw.width / 2, vw.height / 2)
     }
 
+
     private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
         val pt = getScreenCenter()
