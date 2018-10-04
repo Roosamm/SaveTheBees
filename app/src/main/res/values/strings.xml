@@ -17,6 +17,8 @@
     <string name="arMmodels">3D Models:</string>
     <string name="maker">Poly by Google</string>
     <string name="maker2">Boneboys</string>
+    <string name="icons">Icons:</string>
+    <string name="maker3">Freepik from www.flaticon.com</string>
 
     <!--How to play-->
     <string name="howTo">GIT GUD</string>

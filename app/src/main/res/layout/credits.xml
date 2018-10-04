@@ -45,6 +45,20 @@
             android:layout_height="wrap_content"
             android:text="@string/maker2" />
 
+        <TextView
+            android:id="@+id/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/icons"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/maker3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maker3" />
+
 
             <!--<android.support.design.widget.FloatingActionButton-->
                 <!--android:id="@+id/backBtn"-->

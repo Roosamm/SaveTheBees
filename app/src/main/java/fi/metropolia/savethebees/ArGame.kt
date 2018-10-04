@@ -36,6 +36,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     }
 
 
+
     private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
         val pt = getScreenCenter()
