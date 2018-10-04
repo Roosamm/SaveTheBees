@@ -7,45 +7,45 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-    android:id="@+id/howToBtn"
-    android:layout_marginHorizontal="60dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/howToPlay" />
+        <Button
+            android:id="@+id/howToBtn"
+            android:layout_marginHorizontal="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/howToPlay" />
 
-    <Button
-    android:id="@+id/startBtn"
-    android:layout_marginHorizontal="60dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/startGame" />
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_marginHorizontal="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/startGame" />
 
-    <Button
-    android:id="@+id/highBtn"
-    android:layout_marginHorizontal="60dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/highScore" />
+        <Button
+            android:id="@+id/highBtn"
+            android:layout_marginHorizontal="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/highScore" />
 
-    <Button
-    android:id="@+id/optionsBtn"
-    android:layout_marginHorizontal="60dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/options" />
+        <Button
+            android:id="@+id/optionsBtn"
+            android:layout_marginHorizontal="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/options" />
 
-    <Button
-    android:id="@+id/creditsBtn"
-    android:layout_marginHorizontal="60dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/credits" />
+        <Button
+            android:id="@+id/creditsBtn"
+            android:layout_marginHorizontal="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/credits" />
 
     </LinearLayout>
 
