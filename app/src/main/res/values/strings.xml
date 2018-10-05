@@ -25,8 +25,9 @@
 
     <!--Options-->
     <string name="infoTitle">Info about bees</string>
-    <string name="beeInfo">bzzzzzz</string>
+    <string name="beeInfo">Bees are important pollinators for flowers, fruits and vegetables. Over the past 15 years, colonies of bees have been disappearing even up to 90% This game has been made to raise awareness about bees.</string>
     <string name="languageTitle">Change language</string>
     <string name="language">Finnish</string>
+    <string name="clickBee">Click to Wikipedia</string>
 
 </resources>

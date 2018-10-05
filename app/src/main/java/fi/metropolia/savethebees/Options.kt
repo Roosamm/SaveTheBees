@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.options.*
 
 class Options : AppCompatActivity() {
@@ -14,7 +15,9 @@ class Options : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.options)
 
-        beeInfo.setOnClickListener{
+        Toast.makeText(this, "Tap the bee to Wikipedia", Toast.LENGTH_SHORT).show()
+
+        clickBee.setOnClickListener{
 
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(beeUrl)
