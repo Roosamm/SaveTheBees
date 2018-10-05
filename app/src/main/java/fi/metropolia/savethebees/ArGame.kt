@@ -13,6 +13,7 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.ar.core.HitResult
 import com.google.ar.core.Plane
+import com.google.ar.core.TrackingState
 import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
@@ -24,10 +25,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     lateinit var beeRenderable: ModelRenderable
     lateinit var arFragment: ArFragment
     //    lateinit var modelUri:Uri
-    lateinit var startButton: Button
-
-    var nro: Int = 0
-
+    var num: Int = 0
 
     //Step Sensor
     private var mSensorManager: SensorManager? = null
@@ -51,15 +49,15 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                     val anchorNode = AnchorNode(anchor)
                     anchorNode.setParent(arFragment.arSceneView.scene)
                     val mNode = TransformableNode(arFragment.transformationSystem)
-                    if (nro <= 4) {
+                    if (num <= 4) {
                         mNode.setParent(anchorNode)
                         mNode.renderable = beeRenderable
                         mNode.select()
-                        nro++
+                        num++
                     }
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
-                        nro--
+                        num--
 
                     }
                 }
@@ -74,9 +72,14 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         //Step Sensor
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
 
-        startButton = findViewById(R.id.testBtn)
-        startButton.setOnClickListener{ view -> addBeeObject() }
+        //Ar stuff
         arFragment = supportFragmentManager.findFragmentById(R.id.sceneform_fragment) as ArFragment
+        arFragment.arSceneView.scene.addOnUpdateListener{
+            if (arFragment.arSceneView.arFrame.camera.trackingState == TrackingState.TRACKING){
+                addBeeObject()
+
+            }
+        }
 
         val bee = ModelRenderable.builder()
                 .setSource(this, Uri.parse("Mesh_Bumblebee.sfb"))
