@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SaveTheBees</string>
+    <string name="app_name">Save The Bees</string>
 
     <!--Star screen-->
     <string name="startGame">Start Game</string>

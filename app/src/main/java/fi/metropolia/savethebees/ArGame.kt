@@ -26,6 +26,9 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     //    lateinit var modelUri:Uri
     lateinit var startButton: Button
 
+    var nro: Int = 0
+
+
     //Step Sensor
     private var mSensorManager: SensorManager? = null
     private var running = false
@@ -35,13 +38,11 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         return android.graphics.Point(vw.width / 2, vw.height / 2)
     }
 
-
-
     private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
         val pt = getScreenCenter()
         val hits: List<HitResult>
-        if (frame != null && beeRenderable != null){
+        if (frame != null){
             hits = frame.hitTest(pt.x.toFloat(), pt.y.toFloat())
             for (hit in hits) {
                 val trackable = hit.trackable
@@ -50,10 +51,17 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                     val anchorNode = AnchorNode(anchor)
                     anchorNode.setParent(arFragment.arSceneView.scene)
                     val mNode = TransformableNode(arFragment.transformationSystem)
-                    mNode.setParent(anchorNode)
-                    mNode.renderable = beeRenderable
-                    mNode.select()
-                    break
+                    if (nro <= 4) {
+                        mNode.setParent(anchorNode)
+                        mNode.renderable = beeRenderable
+                        mNode.select()
+                        nro++
+                    }
+                    mNode.setOnTapListener { _, _ ->
+                        anchorNode.removeChild(mNode)
+                        nro--
+
+                    }
                 }
             }
         }
