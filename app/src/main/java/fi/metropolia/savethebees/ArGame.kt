@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import com.google.ar.core.HitResult
 import com.google.ar.core.Plane
@@ -26,6 +27,8 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     lateinit var arFragment: ArFragment
     //    lateinit var modelUri:Uri
     var num: Int = 0
+
+    var points: Int = 1
 
     //Step Sensor
     private var mSensorManager: SensorManager? = null
@@ -49,7 +52,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                     val anchorNode = AnchorNode(anchor)
                     anchorNode.setParent(arFragment.arSceneView.scene)
                     val mNode = TransformableNode(arFragment.transformationSystem)
-                    if (num <= 4) {
+                    if (num <= 6) {
                         mNode.setParent(anchorNode)
                         mNode.renderable = beeRenderable
                         mNode.select()
@@ -59,6 +62,8 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
                         num--
+
+                        showPoints.text = "" + points++
 
                     }
                 }
@@ -85,6 +90,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                 .setSource(this, Uri.parse("Mesh_Bumblebee.sfb"))
                 .build()
         bee.thenAccept {it -> beeRenderable = it}
+
 
 //        val spider = ModelRenderable.builder()
 //                .setSource(this, Uri.parse("Spider_01.sfb"))

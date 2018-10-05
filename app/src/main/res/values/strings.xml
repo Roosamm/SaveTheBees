@@ -30,4 +30,7 @@
     <string name="language">Finnish</string>
     <string name="clickBee">Click to Wikipedia</string>
 
+    <!--Points-->
+    <string name="showPoints">0</string>
+
 </resources>

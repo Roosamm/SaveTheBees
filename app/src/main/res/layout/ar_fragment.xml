@@ -21,6 +21,15 @@
             android:layout_height="match_parent" />
 
         <TextView
+            android:id="@+id/showPoints"
+            android:layout_width="90dp"
+            android:layout_height="28dp"
+            android:background="@color/stepsColor"
+            android:text="@string/showPoints"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"/>
+
+        <TextView
             android:id="@+id/showSteps"
             android:layout_width="90dp"
             android:layout_height="28dp"
