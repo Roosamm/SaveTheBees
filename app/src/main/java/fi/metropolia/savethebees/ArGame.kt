@@ -54,6 +54,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                         mNode.renderable = beeRenderable
                         mNode.select()
                         num++
+                        Toast.makeText(this, "SAVE THE BEES, SAVE THEM ALL", Toast.LENGTH_SHORT).show()
                     }
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
@@ -77,7 +78,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         arFragment.arSceneView.scene.addOnUpdateListener{
             if (arFragment.arSceneView.arFrame.camera.trackingState == TrackingState.TRACKING){
                 addBeeObject()
-
             }
         }
 
