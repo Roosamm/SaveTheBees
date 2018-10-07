@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Save The Bees</string>
 
-    <!--Star screen-->
+    <!--Start screen-->
     <string name="startGame">Start Game</string>
     <string name="options">Options</string>
     <string name="credits">Credits</string>

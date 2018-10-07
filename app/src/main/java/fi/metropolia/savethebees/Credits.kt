@@ -2,8 +2,6 @@ package fi.metropolia.savethebees
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import android.view.View
 
 class Credits: AppCompatActivity() {
 
