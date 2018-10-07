@@ -1,6 +1,7 @@
 package fi.metropolia.savethebees
 
 import android.content.Context
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -20,6 +21,7 @@ import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 import kotlinx.android.synthetic.main.ar_fragment.*
+import java.util.*
 
 class ArGame: AppCompatActivity(), SensorEventListener {
 
@@ -27,24 +29,24 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     lateinit var arFragment: ArFragment
     //    lateinit var modelUri:Uri
     var num: Int = 0
-
-    var points: Int = 1
+    var points: Int = 0
 
     //Step Sensor
     private var mSensorManager: SensorManager? = null
     private var running = false
 
-    private fun getScreenCenter():android.graphics.Point{
-        val vw = findViewById<View>(android.R.id.content)
-        return android.graphics.Point(vw.width / 2, vw.height / 2)
+    private fun rndPosition(): Float{
+        val rnd = Math.random() * 1
+        return rnd.toFloat()
     }
+
 
     private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
-        val pt = getScreenCenter()
+        val pt = rndPosition()
         val hits: List<HitResult>
         if (frame != null){
-            hits = frame.hitTest(pt.x.toFloat(), pt.y.toFloat())
+            hits = frame.hitTest(pt, pt)
             for (hit in hits) {
                 val trackable = hit.trackable
                 if (trackable is Plane) {
@@ -57,19 +59,18 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                         mNode.renderable = beeRenderable
                         mNode.select()
                         num++
-                        Toast.makeText(this, "SAVE THE BEES, SAVE THEM ALL", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "MORE BEES", Toast.LENGTH_SHORT).show()
                     }
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
                         num--
-
                         showPoints.text = "" + points++
-
                     }
                 }
             }
         }
     }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -95,7 +96,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 //        val spider = ModelRenderable.builder()
 //                .setSource(this, Uri.parse("Spider_01.sfb"))
 //                .build()
-//        spider.thenAccept {it -> beeRenderable = it}
+//        spider.thenAccept {it -> spiderRenderable = it}
 
 //        val honey = ModelRenderable.builder()
 //                .setSource(this, Uri.parse("model.sfb"))
@@ -126,6 +127,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
             val mFloat = event.values[0]
             val mInt = mFloat.toInt()
             showSteps.text = "" + mInt
+            showPoints.text = "" + points++
         }
     }
 
