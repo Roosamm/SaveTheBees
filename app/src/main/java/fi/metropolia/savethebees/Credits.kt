@@ -10,7 +10,7 @@ class Credits: AppCompatActivity() {
         setContentView(R.layout.credits)
 
         val backBtn = supportActionBar
-        backBtn!!.title = "Credits"
+        backBtn!!.title = ""
 
         backBtn.setDisplayHomeAsUpEnabled(true)
         backBtn.setDisplayHomeAsUpEnabled(true)

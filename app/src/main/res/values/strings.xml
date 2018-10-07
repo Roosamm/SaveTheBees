@@ -3,7 +3,7 @@
 
     <!--Start screen-->
     <string name="startGame">Start Game</string>
-    <string name="options">Options</string>
+    <string name="bees">Bees</string>
     <string name="credits">Credits</string>
     <string name="howToPlay">How To Play</string>
     <string name="highScore">High Score</string>

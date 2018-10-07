@@ -10,7 +10,7 @@ class HowToPlay: AppCompatActivity(){
         setContentView(R.layout.how_to_play)
 
         val backBtn = supportActionBar
-        backBtn!!.title = "How to Play"
+        backBtn!!.title = ""
 
         backBtn.setDisplayHomeAsUpEnabled(true)
         backBtn.setDisplayHomeAsUpEnabled(true)

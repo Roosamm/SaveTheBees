@@ -34,7 +34,7 @@ class Options : AppCompatActivity() {
 
         //back to previous page
         val backBtn = supportActionBar
-        backBtn!!.title = "Options"
+        backBtn!!.title = ""
 
         backBtn.setDisplayHomeAsUpEnabled(true)
         backBtn.setDisplayHomeAsUpEnabled(true)

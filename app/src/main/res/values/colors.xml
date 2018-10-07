@@ -10,5 +10,6 @@
     <color name="main">#ffff2d</color>
     <color name="main2">#ffff00</color>
     <color name="secondary">#000000</color>
+    <color name="text">#ffffff</color>
 
 </resources>

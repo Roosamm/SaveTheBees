@@ -4,9 +4,9 @@
 
     <!--Start screen-->
     <string name="startGame">Pelaa</string>
-    <string name="options">Valikko</string>
+    <string name="bees">Mehiläisistä</string>
     <string name="credits">Tekijät</string>
-    <string name="howToPlay">Kuinka pelata</string>
+    <string name="howToPlay">Ohjeet</string>
     <string name="highScore">Pisteet</string>
 
     <!--step sensor-->
@@ -18,7 +18,7 @@
     <string name="arMmodels">3D Modelit:</string>
     <string name="maker">Poly by Google</string>
     <string name="maker2">Boneboys</string>
-    <string name="icons">Iconit:</string>
+    <string name="icons">Ikonit:</string>
     <string name="maker3">Freepik from www.flaticon.com</string>
 
     <!--How to play-->
@@ -26,7 +26,7 @@
 
     <!--Options-->
     <string name="infoTitle">Tietoa mehiläisistä</string>
-    <string name="beeInfo">Bees are important pollinators for flowers, fruits and vegetables. Over the past 15 years, colonies of bees have been disappearing even up to 90% This game has been made to raise awareness about bees.</string>
+    <string name="beeInfo">Mehiläiset ovat tärkeitä pölyttäjiä. Viimeisen 15 vuoden ajan mehiläisten määrä on ollut suuressa laskussa. Tämän pelin idea on kasvattaa tietoisuutta mehiläisistä.</string>
     <string name="languageTitle">Vaihda kieli</string>
     <string name="language">Englanti</string>
     <string name="clickBee">Clikkaa Wikipediaan</string>
