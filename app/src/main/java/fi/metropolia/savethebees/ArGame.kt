@@ -102,6 +102,10 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 //        honey.thenAccept {it -> beeRenderable = it}
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
+
     override fun onResume() {
         super.onResume()
         running = true
