@@ -1,6 +1,7 @@
 package fi.metropolia.savethebees
 
 import android.content.Context
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -16,6 +17,7 @@ import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ar_fragment.*
 
 class ArGame: AppCompatActivity(), SensorEventListener {
@@ -74,6 +76,12 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ar_fragment)
 
+        quitBtn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         //Step Sensor
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
 
@@ -104,6 +112,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 
     override fun onBackPressed() {
         super.onBackPressed()
+        Toast.makeText(this, "PUSHED BACK BUTTON", Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
