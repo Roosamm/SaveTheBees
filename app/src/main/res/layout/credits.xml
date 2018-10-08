@@ -16,14 +16,17 @@
             android:id="@+id/developersTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
             android:text="@string/developersTxt"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/names"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/names" />
+            android:text="@string/names"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/arModels"
@@ -31,19 +34,22 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="@string/arMmodels"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/maker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/maker" />
+            android:text="@string/maker"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/maker2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/maker2" />
+            android:text="@string/maker2"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/icons"
@@ -51,16 +57,26 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="@string/icons"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/maker3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/maker3" />
+            android:text="@string/maker3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/maker4"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="@string/maker4"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
 
-            <!--<android.support.design.widget.FloatingActionButton-->
+        <!--<android.support.design.widget.FloatingActionButton-->
                 <!--android:id="@+id/backBtn"-->
                 <!--android:layout_width="wrap_content"-->
                 <!--android:layout_height="wrap_content"-->

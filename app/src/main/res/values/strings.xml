@@ -7,6 +7,7 @@
     <string name="credits">Credits</string>
     <string name="howToPlay">How To Play</string>
     <string name="highScore">High Score</string>
+    <string name="beeImage">Bee image</string>
 
     <!--step sensor-->
     <string name="showsSteps">0</string>
@@ -19,6 +20,7 @@
     <string name="maker2">Boneboys</string>
     <string name="icons">Icons:</string>
     <string name="maker3">Freepik from www.flaticon.com</string>
+    <string name="maker4">Animation from http://bestanimations.com/Animals/Insects/Bees/Bees.html</string>
 
     <!--How to play-->
     <string name="howTo">GIT GUD</string>
