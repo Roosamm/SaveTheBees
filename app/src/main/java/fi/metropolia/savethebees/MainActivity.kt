@@ -3,6 +3,8 @@ package fi.metropolia.savethebees
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.Animation
+import fi.metropolia.savethebees.R.id.imageView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

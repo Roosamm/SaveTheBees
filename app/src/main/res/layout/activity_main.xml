@@ -17,7 +17,6 @@
             android:layout_marginHorizontal="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:text="@string/howToPlay"
             android:textColor="@color/white"
             android:background="@color/secondary"  />
@@ -39,8 +38,8 @@
             android:layout_marginHorizontal="60dp"
             android:background="@color/secondary"
             android:layout_marginTop="10dp"
-            android:text="@string/highScore"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/highScore"/>
 
         <Button
             android:id="@+id/optionsBtn"
@@ -49,8 +48,8 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="10dp"
             android:background="@color/secondary"
-            android:text="@string/bees"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/bees"/>
 
         <Button
             android:id="@+id/creditsBtn"
@@ -59,8 +58,17 @@
             android:layout_marginHorizontal="60dp"
             android:layout_marginTop="10dp"
             android:background="@color/secondary"
-            android:text="@string/credits"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/credits"/>
+
+        <ImageView
+            android:id="@+id/beeAnimated"
+            android:layout_width="109dp"
+            android:layout_height="98dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/beeanimated" />
 
     </LinearLayout>
 
