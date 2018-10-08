@@ -9,7 +9,8 @@
     <!--test colors-->
     <color name="main">#ffff2d</color>
     <color name="main2">#ffff00</color>
+    <color name="background">#F4E80C</color>
     <color name="secondary">#000000</color>
-    <color name="text">#ffffff</color>
+    <color name="white">#ffffff</color>
 
 </resources>

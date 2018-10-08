@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
 
             android:text="@string/howToPlay"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:background="@color/secondary"  />
 
         <Button
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="@string/startGame"
             android:layout_marginTop="10dp"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:background="@color/secondary"/>
 
         <Button
@@ -40,7 +40,7 @@
             android:background="@color/secondary"
             android:layout_marginTop="10dp"
             android:text="@string/highScore"
-            android:textColor="@color/text" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/optionsBtn"
@@ -50,7 +50,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/secondary"
             android:text="@string/bees"
-            android:textColor="@color/text" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/creditsBtn"
@@ -60,7 +60,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/secondary"
             android:text="@string/credits"
-            android:textColor="@color/text" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

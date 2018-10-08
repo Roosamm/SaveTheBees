@@ -9,6 +9,8 @@ class HowToPlay: AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.how_to_play)
 
+
+
         val backBtn = supportActionBar
         backBtn!!.title = ""
 
