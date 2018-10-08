@@ -1,6 +1,7 @@
 package fi.metropolia.savethebees
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -8,6 +9,7 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.net.Uri
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.google.ar.core.HitResult
@@ -71,15 +73,32 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         }
     }
 
+    override fun onBackPressed() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Exit game?")
+        builder.setMessage("Do you want to exit game?")
+        builder.setPositiveButton("Yes", {dialogInterface: DialogInterface, i: Int ->
+            finish()
+        })
+        builder.setNegativeButton("No", {dialogInterface: DialogInterface, i: Int -> })
+        builder.show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ar_fragment)
 
         quitBtn.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Exit game?")
+            builder.setMessage("Do you want to exit game?")
+            builder.setPositiveButton("Yes", {dialogInterface: DialogInterface, i: Int ->
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            })
+            builder.setNegativeButton("No", {dialogInterface: DialogInterface, i: Int -> })
+            builder.show()
         }
 
         //Step Sensor
@@ -108,11 +127,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 //                .setSource(this, Uri.parse("model.sfb"))
 //                .build()
 //        honey.thenAccept {it -> beeRenderable = it}
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        Toast.makeText(this, "PUSHED BACK BUTTON", Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
