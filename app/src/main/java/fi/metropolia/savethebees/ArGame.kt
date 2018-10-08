@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.google.ar.core.HitResult
@@ -35,8 +36,9 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     private var mSensorManager: SensorManager? = null
     private var running = false
 
+
     private fun rndPosition(): Float{
-        val rnd = Math.random() * 1
+        val rnd = Math.random() * 2
         return rnd.toFloat()
     }
 
@@ -64,7 +66,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
                         num--
-                        showPoints.text = "" + points++
+                        showPoints.text = "" + (points++)*5
                         if(num == 0){
                             Toast.makeText(this, "SEARCH AREA FOR MORE BEES", Toast.LENGTH_SHORT).show()
                         }
@@ -130,7 +132,8 @@ class ArGame: AppCompatActivity(), SensorEventListener {
             val mFloat = event.values[0]
             val mInt = mFloat.toInt()
             showSteps.text = "" + mInt
-            showPoints.text = "" + points++
+            showPoints.text = "" + (points++)*2
+
         }
     }
 
