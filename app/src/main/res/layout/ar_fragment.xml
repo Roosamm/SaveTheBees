@@ -33,6 +33,14 @@
             android:textSize="20sp" />
 
 
+        <ImageView
+            android:src="@drawable/exiticon"
+            android:id="@+id/quitGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"/>
+
+
         <TextView
             android:id="@+id/showSteps"
             android:layout_width="90dp"

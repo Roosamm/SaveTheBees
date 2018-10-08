@@ -65,6 +65,9 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                         anchorNode.removeChild(mNode)
                         num--
                         showPoints.text = "" + points++
+                        if(num == 0){
+                            Toast.makeText(this, "SEARCH AREA FOR MORE BEES", Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             }
