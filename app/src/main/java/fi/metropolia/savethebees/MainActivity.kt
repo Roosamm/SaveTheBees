@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.exitTitle)
                 .setMessage(R.string.exitContent)
-                .setPositiveButton(R.string.yes, DialogInterface.OnClickListener { dialog, id ->
+                .setPositiveButton(R.string.yes, { _, _ ->
                     finish()
         })
-                .setNegativeButton(R.string.no, DialogInterface.OnClickListener { ddialog, id -> })
+                .setNegativeButton(R.string.no, { _, _ -> })
                 .show()
     }
 
