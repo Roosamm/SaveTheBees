@@ -27,12 +27,16 @@
     More bees -tekstin ilmestyessä napauta mehiläisiä napataksesi ne.
     Saat myös pisteitä kävelemällä.</string>
 
-
     <!--Options-->
     <string name="infoTitle">Tietoa mehiläisistä</string>
     <string name="beeInfo">Mehiläiset ovat tärkeitä pölyttäjiä. Viimeisen 15 vuoden ajan mehiläisten määrä on ollut suuressa laskussa. Tämän pelin idea on kasvattaa tietoisuutta mehiläisistä.</string>
     <string name="clickBee">Clikkaa Wikipediaan</string>
     <string name="exitBtn">Paluu nappi</string>
+
+    <!--Start screen-->
+    <string name="nameHint">Pelaajan nimi</string>
+    <string name="scoreHint">Pisteet</string>
+    <string name="saveBtn">Tallenna</string>
 
     <!--step sensor-->
     <string name="showsSteps">0</string>

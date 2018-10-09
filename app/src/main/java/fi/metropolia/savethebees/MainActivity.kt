@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        highBtn.setOnClickListener{
+            val intent = Intent(this, HighScore::class.java)
+            startActivity(intent)
+        }
+
         howToBtn.setOnClickListener{
             val intent = Intent(this, HowToPlay::class.java)
             startActivity(intent)

@@ -31,6 +31,7 @@
         <activity android:name=".Credits"/>
         <activity android:name=".HowToPlay"/>
         <activity android:name=".Options"/>
+        <activity android:name=".HighScore"/>
 
     </application>
 
