@@ -55,14 +55,14 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                         mNode.renderable = beeRenderable
                         mNode.select()
                         num++
-                        Toast.makeText(this, "MORE BEES", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.moreBees, Toast.LENGTH_SHORT).show()
                     }
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
                         num--
                         showPoints.text = "" + (points++)*5
                         if(num == 0){
-                            Toast.makeText(this, "SEARCH AREA FOR MORE BEES", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, R.string.searchArea, Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -72,12 +72,12 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Exit game?")
-        builder.setMessage("Do you want to exit game?")
-        builder.setPositiveButton("Yes", {dialogInterface: DialogInterface, i: Int ->
+        builder.setTitle(R.string.exitTitle)
+        builder.setMessage(R.string.exitContent)
+        builder.setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
             finish()
         })
-        builder.setNegativeButton("No", {dialogInterface: DialogInterface, i: Int -> })
+        builder.setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
         builder.show()
     }
 
@@ -87,14 +87,14 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 
         quitBtn.setOnClickListener{
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Exit game?")
-            builder.setMessage("Do you want to exit game?")
-            builder.setPositiveButton("Yes", {dialogInterface: DialogInterface, i: Int ->
+            builder.setTitle(R.string.exitTitle)
+            builder.setMessage(R.string.exitContent)
+            builder.setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             })
-            builder.setNegativeButton("No", {dialogInterface: DialogInterface, i: Int -> })
+            builder.setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
             builder.show()
         }
 
