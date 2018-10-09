@@ -40,7 +40,19 @@
 
     <!--step sensor-->
     <string name="showsSteps">0</string>
+
     <!--Points-->
     <string name="showPoints">0</string>
+
+    <!--PopUp-->
+    <string name="exitTitle">Exit Game?</string>
+    <string name="exitContent">Do you want to exit the game?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <!--toast-->
+    <string name="searchArea">SEARCH AREA FOR MORE BEES!</string>
+    <string name="moreBees">BEES!</string>
+    <string name="tapBee">Tap the bee to Wikipedia</string>
 
 </resources>

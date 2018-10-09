@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
 
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Exit game?")
-        builder.setMessage("Do you want to exit game?")
-        builder.setPositiveButton("Yes", { dialogInterface: DialogInterface, i: Int ->
+        builder.setTitle(R.string.exitTitle)
+        builder.setMessage(R.string.exitContent)
+        builder.setPositiveButton(R.string.yes, { dialogInterface: DialogInterface, i: Int ->
             finish()
         })
-        builder.setNegativeButton("No", { dialogInterface: DialogInterface, i: Int -> })
+        builder.setNegativeButton(R.string.no, { dialogInterface: DialogInterface, i: Int -> })
         builder.show()
     }
 

@@ -15,7 +15,7 @@ class Options : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.options)
 
-        Toast.makeText(this, "Tap the bee to Wikipedia", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, R.string.tapBee, Toast.LENGTH_SHORT).show()
 
         //link to Wikipedia
         clickBee.setOnClickListener{

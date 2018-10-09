@@ -40,7 +40,18 @@
 
     <!--step sensor-->
     <string name="showsSteps">0</string>
+
     <!--Points-->
     <string name="showPoints">0</string>
+
+    <string name="exitTitle">Lopeta peli?</string>
+    <string name="exitContent">Tahdotko lopettaa pelin?</string>
+    <string name="no">En</string>
+    <string name="yes">Kyllä</string>
+
+    <!--toast-->
+    <string name="searchArea">ETSI LISÄÄ MEHILÄISIÄ!</string>
+    <string name="moreBees">MEHILÄISIÄ!</string>
+    <string name="tapBee">Napauta mehiläistä lukeaksesi lisää</string>
 
 </resources>
