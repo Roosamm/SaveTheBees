@@ -1,43 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="178dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/infoTitle"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/beeInfo"
-        android:layout_width="351dp"
-        android:layout_height="168dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="108dp"
-        android:text="@string/beeInfo"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/ideaTitle"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/gameIdea"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="26dp" />
 
-    <ImageView
-        android:id="@+id/clickBee"
-        android:layout_width="69dp"
-        android:layout_height="72dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginTop="312dp"
-        android:contentDescription="@string/clickBee"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bee64px" />
+        <TextView
+            android:id="@+id/idea"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/idea"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="79dp" />
+
+        <TextView
+            android:id="@+id/wasMade"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/wasMade"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/infoTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="152dp" />
+
+        <TextView
+            android:id="@+id/beeInfo"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/beeInfo"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clickBee"
+            android:layout_width="69dp"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp"
+            android:contentDescription="@string/clickBee"
+            app:srcCompat="@drawable/bee64px"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="384dp" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

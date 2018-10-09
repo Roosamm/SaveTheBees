@@ -3,7 +3,7 @@
 
     <!--Start screen-->
     <string name="startGame">Start Game</string>
-    <string name="bees">Bees</string>
+    <string name="bees">Save the bees</string>
     <string name="credits">Credits</string>
     <string name="howToPlay">How To Play</string>
     <string name="highScore">High Score</string>
@@ -20,16 +20,22 @@
     <string name="maker4">Animation from http://bestanimations.com/Animals/Insects/Bees/Bees.html</string>
 
     <!--How to play-->
-    <string name="gameIdea">Idea of the game:</string>
-    <string name="idea">To collect as many points as possible by walking and tapping bees.</string>
     <string name="howTo">How to play:</string>
     <string name="instructions">When you start the game move your phone in circles to find a platform.
     When the toast More bees appears start tapping on the bees to get points.
     Walking around also gives you points.</string>
+    <string name="stepsT">Shows all the steps taken while playing the game.</string>
+    <string name="scoreT">Shows the game score.</string>
+    <string name="hand">Hand image</string>
+    <string name="bee">Shows a bee and platform</string>
+    <string name="numbers">Shows your steps and score</string>
 
     <!--Options-->
+    <string name="gameIdea">Idea of the game:</string>
+    <string name="idea">To collect as many points as possible by walking and tapping bees.</string>
     <string name="infoTitle">Info about bees</string>
-    <string name="beeInfo">Bees are important pollinators for flowers, fruits and vegetables. Over the past 15 years, colonies of bees have been disappearing even up to 90% This game has been made to raise awareness about bees.</string>
+    <string name="beeInfo">Bees are important pollinators for flowers, fruits and vegetables. Over the past 15 years, colonies of bees have been disappearing even up to 90%</string>
+    <string name="wasMade">This game has been made to raise awareness about bees. You save the bees by catching as many as you can and by walking you take care of yourself.</string>
     <string name="clickBee">Click to Wikipedia</string>
     <string name="exitBtn">Exit button</string>
 
@@ -56,7 +62,7 @@
     <string name="tapBee">Tap the bee to Wikipedia</string>
     <string name="noName">Enter name</string>
     <string name="noScore">Enter score</string>
-    <string name="dataSaved">Data saved</string>
+    <string name="dataSaved">Data saved. Go back and return to see the changes.</string>
 
 
 </resources>

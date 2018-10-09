@@ -4,7 +4,6 @@
 
     <!--Start screen-->
     <string name="startGame">Pelaa</string>
-    <string name="bees">Mehiläisistä</string>
     <string name="credits">Tekijät</string>
     <string name="howToPlay">Ohjeet</string>
     <string name="highScore">Pisteet</string>
@@ -20,16 +19,22 @@
     <string name="maker4">Animaatio http://bestanimations.com/Animals/Insects/Bees/Bees.html</string>
 
     <!--How to play-->
-    <string name="gameIdea">Pelin idea:</string>
-    <string name="idea">Kerää mahdollisimman paljon pisteitä napauttamalla mehiläisiä ja kävelemällä.</string>
     <string name="howTo">Ohjeet:</string>
-    <string name="instructions">Aloittaessasi pelin pyörittele puhelinta, jotta se löytäisi alustan.
-    More bees -tekstin ilmestyessä napauta mehiläisiä napataksesi ne.
+    <string name="instructions">Aloittaessasi pelin pyörittele puhelinta näytöllä olevan mallin mukaisesti.
+    Mehiläisiä -tekstin ilmestyessä, mehiläisiä on ilmestynyt jollekin alustalle. Napauta mehiläisiä napataksesi ne.
     Saat myös pisteitä kävelemällä.</string>
+    <string name="stepsT">Näyttää kaikki ottamasi askeleet pelatessasi.</string>
+    <string name="scoreT">Näyttää pelin pisteet</string>
+    <string name="hand">Käden kuva</string>
+    <string name="bee">Näyttää mehiläisen ja alustan</string>
+    <string name="numbers">Näyttää askelten määrän ja pisteet</string>
 
     <!--Options-->
+    <string name="gameIdea">Pelin idea:</string>
+    <string name="idea">Kerää mahdollisimman paljon pisteitä napauttamalla mehiläisiä ja kävelemällä.</string>
     <string name="infoTitle">Tietoa mehiläisistä</string>
-    <string name="beeInfo">Mehiläiset ovat tärkeitä pölyttäjiä. Viimeisen 15 vuoden ajan mehiläisten määrä on ollut suuressa laskussa. Tämän pelin idea on kasvattaa tietoisuutta mehiläisistä.</string>
+    <string name="beeInfo">Mehiläiset ovat tärkeitä pölyttäjiä. Viimeisen 15 vuoden ajan mehiläisten määrä on ollut suuressa laskussa.</string>
+    <string name="wasMade">Tämän pelin idea on kasvattaa tietoisuutta mehiläisistä. Nappaamalla mehiläiset pelastat ne ja kävelemällä pidät itsesi myös kunnossa.</string>
     <string name="clickBee">Clikkaa Wikipediaan</string>
     <string name="exitBtn">Paluu nappi</string>
 
@@ -55,6 +60,6 @@
     <string name="tapBee">Napauta mehiläistä lukeaksesi lisää</string>
     <string name="noName">Kirjoita nimesi</string>
     <string name="noScore">Kirjoita pisteesi</string>
-    <string name="dataSaved">Tallennettu</string>
+    <string name="dataSaved">Tallennettu. Avaa sivu uudelleen nähdäksesi muutoksen.</string>
 
 </resources>

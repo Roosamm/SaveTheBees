@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,31 +11,11 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/ideaTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="5dp"
-            android:text="@string/gameIdea"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
-
-        <TextView
-            android:id="@+id/idea"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="30dp"
-            android:text="@string/idea"
-            android:textSize="16sp" />
-
-        <TextView
             android:id="@+id/howTo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
             android:text="@string/howTo"
@@ -44,11 +25,64 @@
             android:id="@+id/instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:text="@string/instructions"
             android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/hand"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="30dp"
+                android:contentDescription="@string/hand"
+                app:srcCompat="@drawable/helpfulhand" />
+
+            <ImageView
+                android:id="@+id/beeOnPlatform"
+                android:layout_width="142dp"
+                android:layout_height="142dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:contentDescription="@string/bee"
+                app:srcCompat="@drawable/beeplatform" />
+
+            <ImageView
+                android:id="@+id/stepsAndScore"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="30dp"
+                android:contentDescription="@string/numbers"
+                app:srcCompat="@drawable/stepsscore" />
+
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="160dp"
+                android:text="@string/stepsT"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="230dp"
+                android:text="@string/scoreT"
+                android:textSize="16sp" />
+
+        </FrameLayout>
 
     </LinearLayout>
 
