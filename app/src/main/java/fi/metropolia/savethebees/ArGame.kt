@@ -74,10 +74,10 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.exitTitle)
                 .setMessage(R.string.exitContent)
-                .setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
+                .setPositiveButton(R.string.yes, DialogInterface.OnClickListener { dialog, id ->
                     finish()
         })
-                .setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
+                .setNegativeButton(R.string.no, DialogInterface.OnClickListener{ dialog, id -> })
                 .show()
     }
 
@@ -89,12 +89,12 @@ class ArGame: AppCompatActivity(), SensorEventListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle(R.string.exitTitle)
                     .setMessage(R.string.exitContent)
-                    .setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
+                    .setPositiveButton(R.string.yes, DialogInterface.OnClickListener { dialog, id ->
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                         finish()
             })
-                    .setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
+                    .setNegativeButton(R.string.no, DialogInterface.OnClickListener { dialog, id -> })
                     .show()
         }
 

@@ -21,7 +21,7 @@
             android:layout_height="match_parent" />
 
         <ImageButton
-            android:src="@drawable/exiticon"
+            android:src="@drawable/exit_icon_white"
             android:background="@android:color/transparent"
             android:id="@+id/quitBtn"
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_marginTop="15dp"
             android:text="@string/showsSteps"
             android:textAlignment="textEnd"
-            android:textColor="@color/points"
+            android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.911"
@@ -57,7 +57,7 @@
             android:layout_marginTop="45dp"
             android:text="@string/showPoints"
             android:textAlignment="viewEnd"
-            android:textColor="@color/points"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </FrameLayout>
