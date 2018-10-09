@@ -9,14 +9,11 @@ class HowToPlay: AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.how_to_play)
 
-
-
         val backBtn = supportActionBar
         backBtn!!.title = ""
 
         backBtn.setDisplayHomeAsUpEnabled(true)
         backBtn.setDisplayHomeAsUpEnabled(true)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

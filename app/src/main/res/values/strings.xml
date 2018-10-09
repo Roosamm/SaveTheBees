@@ -9,9 +9,6 @@
     <string name="highScore">High Score</string>
     <string name="beeImage">Bee image</string>
 
-    <!--step sensor-->
-    <string name="showsSteps">0</string>
-
     <!--Credits-->
     <string name="developersTxt">Developers:</string>
     <string name="names">Mikko Karlsson and Roosa Mäkelä</string>
@@ -23,15 +20,21 @@
     <string name="maker4">Animation from http://bestanimations.com/Animals/Insects/Bees/Bees.html</string>
 
     <!--How to play-->
-    <string name="howTo">GIT GUD</string>
+    <string name="gameIdea">Idea of the game:</string>
+    <string name="idea">To collect as many points as possible by walking and tapping bees.</string>
+    <string name="howTo">How to play:</string>
+    <string name="instructions">When you start the game move your phone in circles to find a platform.
+    When the toast More bees appears start tapping on the bees to get points.
+    Walking around also gives you points.</string>
 
     <!--Options-->
     <string name="infoTitle">Info about bees</string>
     <string name="beeInfo">Bees are important pollinators for flowers, fruits and vegetables. Over the past 15 years, colonies of bees have been disappearing even up to 90% This game has been made to raise awareness about bees.</string>
-    <string name="languageTitle">Change language</string>
-    <string name="language">Finnish</string>
     <string name="clickBee">Click to Wikipedia</string>
+    <string name="exitBtn">Exit button</string>
 
+    <!--step sensor-->
+    <string name="showsSteps">0</string>
     <!--Points-->
     <string name="showPoints">0</string>
 

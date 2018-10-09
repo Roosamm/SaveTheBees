@@ -19,14 +19,12 @@ import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ar_fragment.*
 
 class ArGame: AppCompatActivity(), SensorEventListener {
 
     lateinit var beeRenderable: ModelRenderable
     lateinit var arFragment: ArFragment
-    //    lateinit var modelUri:Uri
     var num: Int = 0
     var points: Int = 0
 
@@ -38,7 +36,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         val rnd = Math.random() * 2
         return rnd.toFloat()
     }
-
 
     private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
@@ -116,17 +113,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                 .setSource(this, Uri.parse("Mesh_Bumblebee.sfb"))
                 .build()
         bee.thenAccept {it -> beeRenderable = it}
-
-
-//        val spider = ModelRenderable.builder()
-//                .setSource(this, Uri.parse("Spider_01.sfb"))
-//                .build()
-//        spider.thenAccept {it -> spiderRenderable = it}
-
-//        val honey = ModelRenderable.builder()
-//                .setSource(this, Uri.parse("model.sfb"))
-//                .build()
-//        honey.thenAccept {it -> beeRenderable = it}
     }
 
     override fun onResume() {
@@ -158,7 +144,5 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     }
 
     override fun onAccuracyChanged(Sensor: Sensor, accuracy: Int) {
-
     }
-
 }

@@ -27,11 +27,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/exitBtn"/>
 
         <TextView
             android:id="@+id/showSteps"
-            android:layout_width="66dp"
+            android:layout_width="111dp"
             android:layout_height="28dp"
             android:layout_gravity="end"
             android:layout_marginEnd="30dp"
@@ -49,7 +50,7 @@
 
         <TextView
             android:id="@+id/showPoints"
-            android:layout_width="66dp"
+            android:layout_width="111dp"
             android:layout_height="28dp"
             android:layout_gravity="end"
             android:layout_marginEnd="30dp"

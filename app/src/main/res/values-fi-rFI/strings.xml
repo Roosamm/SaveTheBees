@@ -9,9 +9,6 @@
     <string name="howToPlay">Ohjeet</string>
     <string name="highScore">Pisteet</string>
 
-    <!--step sensor-->
-    <string name="showsSteps">0</string>
-
     <!--Credits-->
     <string name="developersTxt">Kehittäjät:</string>
     <string name="names">Mikko Karlsson ja Roosa Mäkelä</string>
@@ -19,18 +16,27 @@
     <string name="maker">Poly by Google</string>
     <string name="maker2">Boneboys</string>
     <string name="icons">Ikonit:</string>
-    <string name="maker3">Freepik from www.flaticon.com</string>
+    <string name="maker3">Freepik www.flaticon.com</string>
+    <string name="maker4">Animaatio http://bestanimations.com/Animals/Insects/Bees/Bees.html</string>
 
     <!--How to play-->
-    <string name="howTo">GIT GUD</string>
+    <string name="gameIdea">Pelin idea:</string>
+    <string name="idea">Kerää mahdollisimman paljon pisteitä napauttamalla mehiläisiä ja kävelemällä.</string>
+    <string name="howTo">Ohjeet:</string>
+    <string name="instructions">Aloittaessasi pelin pyörittele puhelinta, jotta se löytäisi alustan.
+    More bees -tekstin ilmestyessä napauta mehiläisiä napataksesi ne.
+    Saat myös pisteitä kävelemällä.</string>
+
 
     <!--Options-->
     <string name="infoTitle">Tietoa mehiläisistä</string>
     <string name="beeInfo">Mehiläiset ovat tärkeitä pölyttäjiä. Viimeisen 15 vuoden ajan mehiläisten määrä on ollut suuressa laskussa. Tämän pelin idea on kasvattaa tietoisuutta mehiläisistä.</string>
-    <string name="languageTitle">Vaihda kieli</string>
-    <string name="language">Englanti</string>
     <string name="clickBee">Clikkaa Wikipediaan</string>
+    <string name="exitBtn">Paluu nappi</string>
 
+    <!--step sensor-->
+    <string name="showsSteps">0</string>
     <!--Points-->
     <string name="showPoints">0</string>
+
 </resources>
