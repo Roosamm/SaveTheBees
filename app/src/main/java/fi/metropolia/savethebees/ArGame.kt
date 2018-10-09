@@ -73,12 +73,12 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.exitTitle)
-        builder.setMessage(R.string.exitContent)
-        builder.setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
-            finish()
+                .setMessage(R.string.exitContent)
+                .setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
+                    finish()
         })
-        builder.setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
-        builder.show()
+                .setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
+                .show()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -88,14 +88,14 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         quitBtn.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle(R.string.exitTitle)
-            builder.setMessage(R.string.exitContent)
-            builder.setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
+                    .setMessage(R.string.exitContent)
+                    .setPositiveButton(R.string.yes, {dialogInterface: DialogInterface, i: Int ->
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
             })
-            builder.setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
-            builder.show()
+                    .setNegativeButton(R.string.no, {dialogInterface: DialogInterface, i: Int -> })
+                    .show()
         }
 
         //Step Sensor
