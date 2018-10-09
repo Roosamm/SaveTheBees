@@ -53,5 +53,8 @@
     <string name="searchArea">ETSI LISÄÄ MEHILÄISIÄ!</string>
     <string name="moreBees">MEHILÄISIÄ!</string>
     <string name="tapBee">Napauta mehiläistä lukeaksesi lisää</string>
+    <string name="noName">Kirjoita nimesi</string>
+    <string name="noScore">Kirjoita pisteesi</string>
+    <string name="dataSaved">Tallennettu</string>
 
 </resources>

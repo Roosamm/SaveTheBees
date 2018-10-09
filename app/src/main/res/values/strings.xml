@@ -54,5 +54,9 @@
     <string name="searchArea">SEARCH AREA FOR MORE BEES!</string>
     <string name="moreBees">BEES!</string>
     <string name="tapBee">Tap the bee to Wikipedia</string>
+    <string name="noName">Enter name</string>
+    <string name="noScore">Enter score</string>
+    <string name="dataSaved">Data saved</string>
+
 
 </resources>
