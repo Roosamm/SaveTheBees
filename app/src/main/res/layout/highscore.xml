@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/scoreHint"
-            android:inputType=""
+            android:inputType="number"
              />
 
         <Button
@@ -44,7 +44,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="TextView"
+                android:text="@string/playerName"
                 android:textAlignment="textEnd"
                 android:textSize="16sp" />
 
@@ -52,9 +52,9 @@
                 android:id="@+id/showScore"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:layout_marginEnd="30dp"
-                android:text="TextView"
+                android:text="@string/myScore"
                 android:textSize="16sp" />
 
         </FrameLayout>

@@ -39,10 +39,12 @@
     <string name="clickBee">Clikkaa Wikipediaan</string>
     <string name="exitBtn">Paluu nappi</string>
 
-    <!--Start screen-->
+    <!--High score screen-->
     <string name="nameHint">Pelaajan nimi</string>
     <string name="scoreHint">Pisteet</string>
     <string name="saveBtn">Tallenna</string>
+    <string name="playerName">Pelaajan nimi</string>
+    <string name="myScore">Tulos</string>
 
     <!--step sensor-->
     <string name="showsSteps">0</string>

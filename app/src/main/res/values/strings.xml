@@ -40,10 +40,12 @@
     <string name="clickBee">Click to Wikipedia</string>
     <string name="exitBtn">Exit button</string>
 
-    <!--Start screen-->
+    <!--High score screen-->
     <string name="nameHint">Players name</string>
     <string name="scoreHint">Score</string>
     <string name="saveBtn">Save</string>
+    <string name="playerName">Players name</string>
+    <string name="myScore">Players score</string>
 
     <!--step sensor-->
     <string name="showsSteps">0</string>
