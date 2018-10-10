@@ -51,7 +51,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                 hits = frame.hitTest(rp, rp)
                 for (hit in hits) {
                     val trackable = hit.trackable
-                    if (trackable is Plane) {
+                    if (trackable is Plane && bees == 0) {
                         val anchor = arFragment.arSceneView.session.createAnchor(arFragment.arSceneView.arFrame.camera.displayOrientedPose)
                         val anchorNode = AnchorNode(anchor)
                         anchorNode.setParent(arFragment.arSceneView.scene)
