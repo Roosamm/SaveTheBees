@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:id="@+id/testi">
+
+        <ImageView
+            android:id="@+id/exitIcon"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/honey"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background"/>
+        <TextView
+            android:id="@+id/alertQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exitIcon"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/exitMessage"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

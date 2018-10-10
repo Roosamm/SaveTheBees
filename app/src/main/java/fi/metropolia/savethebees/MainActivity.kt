@@ -1,6 +1,5 @@
 package fi.metropolia.savethebees
 
-import android.content.DialogInterface
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -10,13 +9,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
-
         val builder = AlertDialog.Builder(this)
-        builder.setTitle(R.string.exitTitle)
-                .setMessage(R.string.exitContent)
+        val dialogView = layoutInflater.inflate(R.layout.dialog_layout, null)
+        builder.setView(dialogView)
                 .setPositiveButton(R.string.yes, { _, _ ->
                     super.onBackPressed()
-        })
+                })
                 .setNegativeButton(R.string.no, { _, _ -> })
                 .show()
     }

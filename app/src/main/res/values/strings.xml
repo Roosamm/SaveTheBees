@@ -55,7 +55,7 @@
 
     <!--PopUp-->
     <string name="exitTitle">Exit Game?</string>
-    <string name="exitContent">Do you want to exit the game?</string>
+    <string name="exitMessage">Do you want to exit the game?</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
 

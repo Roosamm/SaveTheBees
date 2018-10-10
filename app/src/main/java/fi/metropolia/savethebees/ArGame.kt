@@ -1,8 +1,6 @@
 package fi.metropolia.savethebees
 
 import android.content.Context
-import android.content.DialogInterface
-import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -77,8 +75,8 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     //Ask user if they want to exit the app when they press phones back button
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle(R.string.exitTitle)
-                .setMessage(R.string.exitContent)
+        val dialogView = layoutInflater.inflate(R.layout.dialog_layout, null)
+        builder.setView(dialogView)
                 .setPositiveButton(R.string.yes, { _, _ ->
                     super.onBackPressed()
         })
@@ -90,13 +88,14 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ar_fragment)
 
+        // quit button in AR screens top left corner
         quitBtn.setOnClickListener{
             val builder = AlertDialog.Builder(this)
-            builder.setTitle(R.string.exitTitle)
-                    .setMessage(R.string.exitContent)
+            val dialogView = layoutInflater.inflate(R.layout.dialog_layout, null)
+            builder.setView(dialogView)
                     .setPositiveButton(R.string.yes, { _, _ ->
                         super.onBackPressed()
-            })
+                    })
                     .setNegativeButton(R.string.no, { _, _ -> })
                     .show()
         }

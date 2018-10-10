@@ -53,7 +53,7 @@
     <string name="showPoints">0</string>
 
     <string name="exitTitle">Lopeta peli?</string>
-    <string name="exitContent">Tahdotko lopettaa pelin?</string>
+    <string name="exitMessage">Tahdotko lopettaa pelin?</string>
     <string name="no">En</string>
     <string name="yes">Kyllä</string>
 
