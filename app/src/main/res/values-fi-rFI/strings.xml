@@ -40,11 +40,13 @@
     <string name="exitBtn">Paluu nappi</string>
 
     <!--High score screen-->
-    <string name="nameHint">Pelaajan nimi</string>
-    <string name="scoreHint">Pisteet</string>
-    <string name="saveBtn">Tallenna</string>
+    <string name="nameHint">Pelaaja</string>
+    <string name="scoreHint">Tulos</string>
     <string name="playerName">Pelaajan nimi</string>
     <string name="myScore">Tulos</string>
+    <string name="saveBtn">Tallenna</string>
+    <string name="TopScores">Tulokset:</string>
+    <string name="edit">Muokkaa</string>
 
     <!--step sensor-->
     <string name="showsSteps">0</string>

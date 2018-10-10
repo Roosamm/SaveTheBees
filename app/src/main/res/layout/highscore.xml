@@ -9,29 +9,75 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <EditText
             android:id="@+id/playerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/nameHint"
-            android:inputType=""
-             />
+            android:inputType="" />
 
         <EditText
             android:id="@+id/myScore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/scoreHint"
-            android:inputType="number"
-             />
+            android:inputType="number" />
 
         <Button
             android:id="@+id/saveBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@color/secondary"
             android:text="@string/saveBtn"
             android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/scoreTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/TopScores"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/saveBtn" >
+
+            <TextView
+                android:id="@+id/showName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:text="@string/playerName"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/showScore"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/myScore"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/edit1"
+                android:layout_width="73dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:text="@string/edit"
+                android:background="@color/secondary"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -40,22 +86,70 @@
             app:layout_constraintBottom_toBottomOf="@+id/saveBtn" >
 
             <TextView
-                android:id="@+id/showName"
+                android:id="@+id/showNameTwo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="30dp"
-                android:text="@string/playerName"
-                android:textAlignment="textEnd"
+                android:text="@string/playerName2"
+                android:textAlignment="center"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/showScore"
-                android:layout_width="100dp"
+                android:id="@+id/showScoreTwo"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/myScore2"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/edit2"
+                android:layout_width="73dp"
+                android:layout_height="40dp"
                 android:layout_gravity="end"
                 android:layout_marginEnd="30dp"
-                android:text="@string/myScore"
+                android:text="@string/edit"
+                android:background="@color/secondary"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/saveBtn" >
+
+            <TextView
+                android:id="@+id/showNameThree"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:text="@string/playerName3"
+                android:textAlignment="center"
                 android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/showScoreThree"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/myScore3"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/edit3"
+                android:layout_width="73dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:text="@string/edit"
+                android:background="@color/secondary"
+                android:textColor="@color/white" />
 
         </FrameLayout>
 

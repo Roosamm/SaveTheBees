@@ -43,9 +43,15 @@
     <!--High score screen-->
     <string name="nameHint">Players name</string>
     <string name="scoreHint">Score</string>
-    <string name="saveBtn">Save</string>
     <string name="playerName">Players name</string>
     <string name="myScore">Players score</string>
+    <string name="saveBtn">Save</string>
+    <string name="playerName2">Jippe</string>
+    <string name="myScore2">1005</string>
+    <string name="playerName3">Roska</string>
+    <string name="myScore3">650</string>
+    <string name="TopScores">Top Scores:</string>
+    <string name="edit">Edit</string>
 
     <!--step sensor-->
     <string name="showsSteps">0</string>
