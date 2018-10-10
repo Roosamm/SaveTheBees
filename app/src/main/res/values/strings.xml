@@ -38,7 +38,6 @@
     <string name="beeInfo">Bees are important pollinators for flowers, fruits and vegetables. Over the past 15 years, colonies of bees have been disappearing even up to 90%</string>
     <string name="wasMade">This game has been made to raise awareness about bees. You save the bees by catching as many as you can and by walking you take care of yourself.</string>
     <string name="clickBee">Click to Wikipedia</string>
-    <string name="exitBtn">Exit button</string>
 
     <!--High score screen-->
     <string name="nameHint">Players name</string>
@@ -52,6 +51,9 @@
     <string name="myScore3">650</string>
     <string name="TopScores">Top Scores:</string>
     <string name="edit">Edit</string>
+
+    <!--AR-->
+    <string name="exitBtn">Exit button</string>
 
     <!--Dialog-->
     <string name="honey">Honey</string>

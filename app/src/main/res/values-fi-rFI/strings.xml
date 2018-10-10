@@ -37,7 +37,6 @@
     <string name="beeInfo">Mehiläiset ovat tärkeitä pölyttäjiä. Viimeisen 15 vuoden ajan mehiläisten määrä on ollut suuressa laskussa.</string>
     <string name="wasMade">Tämän pelin idea on kasvattaa tietoisuutta mehiläisistä. Nappaamalla mehiläiset pelastat ne ja kävelemällä pidät itsesi myös kunnossa.</string>
     <string name="clickBee">Klikkaa Wikipediaan</string>
-    <string name="exitBtn">Paluu nappi</string>
 
     <!--High score screen-->
     <string name="nameHint">Pelaaja</string>
@@ -47,6 +46,9 @@
     <string name="saveBtn">Tallenna</string>
     <string name="TopScores">Tulokset:</string>
     <string name="edit">Muokkaa</string>
+
+    <!--AR-->
+    <string name="exitBtn">Poistu</string>
 
     <!--Dialog-->
     <string name="honey">Hunaja</string>
