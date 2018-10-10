@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         builder.setTitle(R.string.exitTitle)
                 .setMessage(R.string.exitContent)
                 .setPositiveButton(R.string.yes, { _, _ ->
-                    finish()
+                    super.onBackPressed()
         })
                 .setNegativeButton(R.string.no, { _, _ -> })
                 .show()

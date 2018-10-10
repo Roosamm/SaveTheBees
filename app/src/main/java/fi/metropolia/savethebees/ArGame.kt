@@ -32,11 +32,13 @@ class ArGame: AppCompatActivity(), SensorEventListener {
     private var mSensorManager: SensorManager? = null
     private var running = false
 
+    //3D object position
     private fun rndPosition(): Float{
         val rnd = Math.random() * 2
         return rnd.toFloat()
     }
 
+    //Adds 3D object
     private fun  addBeeObject(){
         val frame = arFragment.arSceneView.arFrame
         val pt = rndPosition()
@@ -57,6 +59,8 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                         num++
                         Toast.makeText(this, R.string.moreBees, Toast.LENGTH_SHORT).show()
                     }
+
+                    //Remove 3D object when user taps it
                     mNode.setOnTapListener { _, _ ->
                         anchorNode.removeChild(mNode)
                         num--
@@ -70,12 +74,13 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         }
     }
 
+    //Ask user if they want to exit the app when they press phones back button
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle(R.string.exitTitle)
                 .setMessage(R.string.exitContent)
                 .setPositiveButton(R.string.yes, { _, _ ->
-                    finish()
+                    super.onBackPressed()
         })
                 .setNegativeButton(R.string.no, { _, _ -> })
                 .show()
@@ -90,9 +95,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
             builder.setTitle(R.string.exitTitle)
                     .setMessage(R.string.exitContent)
                     .setPositiveButton(R.string.yes, { _, _ ->
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                        finish()
+                        super.onBackPressed()
             })
                     .setNegativeButton(R.string.no, { _, _ -> })
                     .show()
@@ -101,7 +104,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         //Step Sensor
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
 
-        //Ar stuff
+        //Adds 3D object after finding flat surface
         arFragment = supportFragmentManager.findFragmentById(R.id.sceneform_fragment) as ArFragment
         arFragment.arSceneView.scene.addOnUpdateListener{
             if (arFragment.arSceneView.arFrame.camera.trackingState == TrackingState.TRACKING){
@@ -115,6 +118,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         bee.thenAccept {it -> beeRenderable = it}
     }
 
+    //Step sensor stuff
     override fun onResume() {
         super.onResume()
         running = true
