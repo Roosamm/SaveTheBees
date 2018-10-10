@@ -33,7 +33,7 @@ https://github.com/Roosamm/SaveTheBees.git
 
 ## Authors and aditional credits
 
-#### Developers
+#### Authors
 * Mikko Karlsson
 * Roosa Mäkelä
 
