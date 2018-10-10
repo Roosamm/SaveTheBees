@@ -17,6 +17,7 @@ class HighScore : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.highscore)
 
+        //Saves one players name and score at a time
         playerName = findViewById(R.id.playerName)
         myScore = findViewById(R.id.myScore)
 
@@ -34,16 +35,18 @@ class HighScore : AppCompatActivity() {
         backBtn.setDisplayHomeAsUpEnabled(true)
     }
 
+    //retrieves the input
     private fun retrieveData() {
         val myPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
         val name = myPref.getString("name", "")
         val score = myPref.getString("score", "")
 
-        showName.setText(name)
-        showScore.setText(score)
+        showName.text = name
+        showScore.text = score
     }
 
+    //Saves input
     private fun saveData() {
         if (playerName.text.isEmpty()) {
             Toast.makeText(this, R.string.noName, Toast.LENGTH_SHORT).show()

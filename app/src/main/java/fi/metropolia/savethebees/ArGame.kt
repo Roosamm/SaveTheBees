@@ -124,7 +124,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         bee.thenAccept {it -> beeRenderable = it}
     }
 
-    //Step sensor stuff
+    //Step sensor
     override fun onResume() {
         super.onResume()
         running = true
@@ -149,7 +149,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
             val mInt = mFloat.toInt()
             showSteps.text = "" + mInt
             showPoints.text = "" + (points++)*2
-
         }
     }
 

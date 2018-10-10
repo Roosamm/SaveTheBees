@@ -53,6 +53,9 @@
     <string name="TopScores">Top Scores:</string>
     <string name="edit">Edit</string>
 
+    <!--Dialog-->
+    <string name="honey">Honey</string>
+
     <!--step sensor-->
     <string name="showsSteps">0</string>
 
@@ -67,11 +70,10 @@
 
     <!--toast-->
     <string name="searchArea">SEARCH AREA FOR MORE BEES!</string>
-    <string name="moreBees">BEES!</string>
+    <string name="moreBees">BEEZ!!!</string>
     <string name="tapBee">Tap the bee to Wikipedia</string>
     <string name="noName">Enter name</string>
     <string name="noScore">Enter score</string>
     <string name="dataSaved">Data saved. Go back and return to see the changes.</string>
-
 
 </resources>

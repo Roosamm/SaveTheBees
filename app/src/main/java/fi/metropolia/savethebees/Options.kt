@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.options.*
 
 class Options : AppCompatActivity() {
 
-    val beeUrl = "https://en.wikipedia.org/wiki/Bee"
+    private val beeUrl = "https://en.wikipedia.org/wiki/Bee"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

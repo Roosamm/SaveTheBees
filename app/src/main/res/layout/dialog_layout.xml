@@ -16,7 +16,9 @@
             android:paddingTop="10dp"
             android:src="@drawable/honey"
             android:layout_centerHorizontal="true"
+            android:contentDescription="@string/honey"
             android:background="@color/background"/>
+
         <TextView
             android:id="@+id/alertQuestion"
             android:layout_width="match_parent"

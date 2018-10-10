@@ -14,7 +14,6 @@ class Credits: AppCompatActivity() {
 
         backBtn.setDisplayHomeAsUpEnabled(true)
         backBtn.setDisplayHomeAsUpEnabled(true)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
