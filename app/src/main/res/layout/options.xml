@@ -23,6 +23,7 @@
             tools:layout_editor_absoluteY="26dp" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/idea"
             android:layout_width="337dp"
             android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
             tools:layout_editor_absoluteY="79dp" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/wasMade"
             android:layout_width="336dp"
             android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
             tools:layout_editor_absoluteY="152dp" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/beeInfo"
             android:layout_width="333dp"
             android:layout_height="wrap_content"

@@ -48,6 +48,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/saveBtn" >
 
             <TextView
+                android:textColor="@color/secondary"
                 android:id="@+id/showName"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -58,6 +59,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:textColor="@color/secondary"
                 android:id="@+id/showScore"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
@@ -85,6 +87,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/saveBtn" >
 
             <TextView
+                android:textColor="@color/secondary"
                 android:id="@+id/showNameTwo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -95,6 +98,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:textColor="@color/secondary"
                 android:id="@+id/showScoreTwo"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
@@ -122,6 +126,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/saveBtn" >
 
             <TextView
+                android:textColor="@color/secondary"
                 android:id="@+id/showNameThree"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -132,6 +137,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:textColor="@color/secondary"
                 android:id="@+id/showScoreThree"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"

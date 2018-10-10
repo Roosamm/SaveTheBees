@@ -19,6 +19,7 @@
             app:srcCompat="@drawable/beehive" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/developersTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,6 +29,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/names"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,6 +37,7 @@
             android:textSize="16sp" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/arModels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,6 +47,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/maker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +55,7 @@
             android:textSize="16sp" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/icons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,6 +65,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/maker3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,6 +73,7 @@
             android:textSize="16sp" />
 
         <TextView
+            android:textColor="@color/secondary"
             android:id="@+id/maker4"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
