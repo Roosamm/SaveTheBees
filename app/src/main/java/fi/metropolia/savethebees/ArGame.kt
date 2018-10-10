@@ -14,6 +14,7 @@ import com.google.ar.core.HitResult
 import com.google.ar.core.Plane
 import com.google.ar.core.TrackingState
 import com.google.ar.sceneform.AnchorNode
+import com.google.ar.sceneform.math.Vector3
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
@@ -23,54 +24,60 @@ class ArGame: AppCompatActivity(), SensorEventListener {
 
     lateinit var beeRenderable: ModelRenderable
     lateinit var arFragment: ArFragment
-    var num: Int = 0
+    var bees: Int = 0
     var points: Int = 0
 
     //Step Sensor
     private var mSensorManager: SensorManager? = null
     private var running = false
 
-    //3D object position
+    //3D object to random position
     private fun rndPosition(): Float{
-        val rnd = Math.random() * 2
+        val rnd = (-2..2).shuffled().first()
         return rnd.toFloat()
     }
 
     //Adds 3D object
     private fun  addBeeObject(){
-        val frame = arFragment.arSceneView.arFrame
-        val pt = rndPosition()
-        val hits: List<HitResult>
-        if (frame != null){
-            hits = frame.hitTest(pt, pt)
-            for (hit in hits) {
-                val trackable = hit.trackable
-                if (trackable is Plane) {
-                    val anchor = hit!!.createAnchor()
-                    val anchorNode = AnchorNode(anchor)
-                    anchorNode.setParent(arFragment.arSceneView.scene)
-                    val mNode = TransformableNode(arFragment.transformationSystem)
-                    if (num <= 6) {
+
+        for(i in 1..6) {
+            val x = rndPosition()
+            val y = rndPosition()
+            val z = rndPosition()
+            val frame = arFragment.arSceneView.arFrame
+            val rp = rndPosition()
+            val hits: List<HitResult>
+            if (frame != null) {
+                hits = frame.hitTest(rp, rp)
+                for (hit in hits) {
+                    val trackable = hit.trackable
+                    if (trackable is Plane) {
+                        val anchor = arFragment.arSceneView.session.createAnchor(arFragment.arSceneView.arFrame.camera.displayOrientedPose)
+                        val anchorNode = AnchorNode(anchor)
+                        anchorNode.setParent(arFragment.arSceneView.scene)
+                        val mNode = TransformableNode(arFragment.transformationSystem)
+                        mNode.select()
                         mNode.setParent(anchorNode)
+                        mNode.localPosition = Vector3(x, y, z)
                         mNode.renderable = beeRenderable
                         mNode.select()
-                        num++
                         Toast.makeText(this, R.string.moreBees, Toast.LENGTH_SHORT).show()
-                    }
 
-                    //Remove 3D object when user taps it
-                    mNode.setOnTapListener { _, _ ->
-                        anchorNode.removeChild(mNode)
-                        num--
-                        showPoints.text = "" + (points++)*5
-                        if(num == 0){
-                            Toast.makeText(this, R.string.searchArea, Toast.LENGTH_SHORT).show()
+                        //Remove 3D object when user taps it
+                        mNode.setOnTapListener { _, _ ->
+                            anchorNode.removeChild(mNode)
+                            bees--
+                            showPoints.text = "" + (points++) * 5
+                            if (bees == 0) {
+                                Toast.makeText(this, R.string.searchArea, Toast.LENGTH_SHORT).show()
+                            }
                         }
                     }
                 }
             }
         }
     }
+
 
     //Ask user if they want to exit the app when they press phones back button
     override fun onBackPressed() {
