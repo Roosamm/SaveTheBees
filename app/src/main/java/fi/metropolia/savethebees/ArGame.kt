@@ -22,6 +22,7 @@ import kotlinx.android.synthetic.main.ar_fragment.*
 
 class ArGame: AppCompatActivity(), SensorEventListener {
 
+    //Ar
     lateinit var beeRenderable: ModelRenderable
     lateinit var arFragment: ArFragment
     var bees: Int = 0
@@ -37,7 +38,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         return rnd.toFloat()
     }
 
-    //Adds 3D object
+    //Add 3D object
     private fun  addBeeObject(){
 
         for(i in 1..6) {
@@ -63,7 +64,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
                         mNode.select()
                         Toast.makeText(this, R.string.moreBees, Toast.LENGTH_SHORT).show()
 
-                        //Remove 3D object when user taps it
+                        //Remove 3D object on user tap
                         mNode.setOnTapListener { _, _ ->
                             anchorNode.removeChild(mNode)
                             bees--
@@ -78,8 +79,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         }
     }
 
-
-    //Ask user if they want to exit the app when they press phones back button
+    //Alert dialog when user presses phones back button
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
         val dialogView = layoutInflater.inflate(R.layout.dialog_layout, null)
@@ -95,7 +95,7 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ar_fragment)
 
-        // quit button in AR screens top left corner
+        // Alert dialog when user presses exit button on AR view
         quitBtn.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             val dialogView = layoutInflater.inflate(R.layout.dialog_layout, null)
@@ -110,7 +110,6 @@ class ArGame: AppCompatActivity(), SensorEventListener {
         //Step Sensor
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
 
-        //Adds 3D object after finding flat surface
         arFragment = supportFragmentManager.findFragmentById(R.id.sceneform_fragment) as ArFragment
         arFragment.arSceneView.scene.addOnUpdateListener{
             if (arFragment.arSceneView.arFrame.camera.trackingState == TrackingState.TRACKING){

@@ -9,6 +9,7 @@ class Credits: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.credits)
 
+        //back button
         val backBtn = supportActionBar
         backBtn!!.title = ""
 

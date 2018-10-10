@@ -24,7 +24,7 @@ class Options : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //back to previous page
+        //back button
         val backBtn = supportActionBar
         backBtn!!.title = ""
 
