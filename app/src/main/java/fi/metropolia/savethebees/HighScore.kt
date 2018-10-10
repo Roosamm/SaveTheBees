@@ -32,7 +32,6 @@ class HighScore : AppCompatActivity() {
 
         backBtn.setDisplayHomeAsUpEnabled(true)
         backBtn.setDisplayHomeAsUpEnabled(true)
-
     }
 
     private fun retrieveData() {
@@ -64,7 +63,6 @@ class HighScore : AppCompatActivity() {
 
         editor.apply()
         Toast.makeText(this, R.string.dataSaved, Toast.LENGTH_SHORT).show()
-
     }
 
     //back button
@@ -72,5 +70,4 @@ class HighScore : AppCompatActivity() {
         onBackPressed()
         return true
     }
-
 }
