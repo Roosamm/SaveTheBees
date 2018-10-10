@@ -31,7 +31,7 @@ https://github.com/Roosamm/SaveTheBees.git
 1. [Android Studio](https://developer.android.com/studio/)
 2. [Kotlin language](https://kotlinlang.org)
 
-## Authors and aditional credits
+## Authors and additional credits
 
 #### Authors
 * Mikko Karlsson
