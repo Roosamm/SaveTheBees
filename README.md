@@ -46,6 +46,6 @@ https://github.com/Roosamm/SaveTheBees.git
 * Freepik from [www.flaticon.com](www.flaticon.com)
 * Animation from [www.bestanimations.com/Animals/Insects/Bees/Bees.html](http://bestanimations.com/Animals/Insects/Bees/Bees.html)
 
-### Additional info
+### Additional information
 
 Due to performance issues we didn't end up using 3D spider model made by Poly by Google or 3D Honey Jar model made by Boneboys but because those are still included in project files we decided to give them credit.
